@@ -1,5 +1,6 @@
 package Weather;
 
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Gson {
@@ -9,7 +10,7 @@ public class Gson {
 		return null;
 	}
 
-	public Object fromJson(InputStreamReader reader, Class<WeatherData> class1) {
+	public Object fromJson(InputStream rd, Class<WeatherData> class1) {
 		Object temper = null;
 		return temper == null ? "San Francisco, California" : temper;
 		// return null;

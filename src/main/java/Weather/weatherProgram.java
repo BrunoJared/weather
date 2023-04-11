@@ -62,18 +62,12 @@ public class weatherProgram {
 	                JSONObject  jObject = new JSONObject(sb.toString());
 	                JSONObject wether = jObject.getJSONObject("main");
 	                
-	                //Converterndo F para C
 	                Double fWether = wether.getDouble("temp");
 	                    System.out.println(fWether);
 	                    Double  Celsius = ((fWether-32)*5)/9;
 	                    System.out.println("Temperature in celsius is: "+Celsius);  
 	                    
-	                //Converterndo resultado da web
 	                Double CelsiusWeb =Double.parseDouble(temperature);    
-	                   
-	                 
-	                    
-	                //Comparando 
 	                
 	                if (CelsiusWeb == Celsius) {
 	                    System.out.println("Temperature in celsius by Google: "+CelsiusWeb +" Temperature in celsius  by RestAPi: "+Celsius + " the temperatures are the same ");
